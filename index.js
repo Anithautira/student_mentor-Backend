@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
-const dbUrl = 'mongodb+srv://anitha:anithautira@cluster0.kdaowy3.mongodb.net/?retryWrites=true&w=majority'
+const dbUrl = 'mongodb+srv://anitha:anithautira@cluster0.dwceeyq.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
 
 // creating new mentor

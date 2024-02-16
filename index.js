@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 const dbUrl = 'mongodb+srv://anitha:anithautira@cluster0.dwceeyq.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
-const port=6500
+const port=5000
 
 // creating new mentor
 app.post('/createMentor', async (req, res) => {

@@ -7,6 +7,7 @@ app.use(cors())
 app.use(express.json())
 const dbUrl = 'mongodb+srv://anitha:anithautira@cluster0.dwceeyq.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
+const port=6500
 
 // creating new mentor
 app.post('/createMentor', async (req, res) => {
@@ -144,4 +145,4 @@ app.get('/getAllStudents/:mentorName', async (req, res) => {
     }
 })
 
-app.listen(5000, () => console.log(`App is listening to 5000`))
+app.listen(port, () => console.log(`App is listening to ${port}`))
